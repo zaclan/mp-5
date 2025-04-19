@@ -1,4 +1,3 @@
-
 import getOriginalUrl from '@/lib/getOriginalUrl';
 import { redirect } from 'next/navigation';
 

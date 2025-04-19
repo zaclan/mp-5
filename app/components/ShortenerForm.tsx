@@ -36,7 +36,10 @@ export default function ShortenerForm() {
         if (err instanceof Error) {
           if (err.message === "Alias URL already taken.") {
             setError("The provided alias already exists. Please use a different alias.")
-          } else {
+          } else if (err.message === "Something went wrong fetching URL.") {
+            setError("URL is unreachable and returns a error.")
+          }
+          else {
             setError("An error occured while creating the new URL.")
           }
         } else {
