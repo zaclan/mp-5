@@ -1,4 +1,4 @@
-import getCollection, { URL_COLLECTION } from '@/db';
+
 import getOriginalUrl from '@/lib/getOriginalUrl';
 import { redirect } from 'next/navigation';
 
