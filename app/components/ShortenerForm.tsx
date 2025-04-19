@@ -9,7 +9,7 @@ const isValidUrl = (urlString: string): boolean => {
     return false; 
   }
 }; 
-const BASE_URL = "http://192.168.1.200:3000/";
+const BASE_URL = "https://mp-5-hazel.vercel.app/";
 
 
 export default function ShortenerForm() {
